@@ -1,9 +1,8 @@
-package uz.pdp.eticket_s_pro.model.noSQL;
+package uz.pdp.eticket_model.model.noSQL;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import net.bytebuddy.description.modifier.FieldManifestation;
-import uz.pdp.eticket_s_pro.model.BaseModel;
+import uz.pdp.eticket_model.model.BaseModel;
 
 import java.time.LocalDate;
 import java.util.List;
