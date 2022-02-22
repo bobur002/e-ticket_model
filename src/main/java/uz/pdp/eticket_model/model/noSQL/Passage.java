@@ -2,8 +2,8 @@ package uz.pdp.eticket_model.model.noSQL;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import uz.pdp.eticket_model.model.postgresql.BaseModel;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -16,8 +16,9 @@ import java.util.List;
 @Document(collation = "NoSql")
 public class Passage extends BaseModelNoSql {
       LocalDate  departureDate;
-      String from;
-      String to;
+      String fromStation;
+      String toStation;
+      @Indexed(unique = true)
       String trainNumber;
       Train train;
       List<Station> stations;

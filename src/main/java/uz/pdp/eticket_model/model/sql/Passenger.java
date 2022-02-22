@@ -1,4 +1,4 @@
-package uz.pdp.eticket_model.model.postgresql;
+package uz.pdp.eticket_model.model.sql;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

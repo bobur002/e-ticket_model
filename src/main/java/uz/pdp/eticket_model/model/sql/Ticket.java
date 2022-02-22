@@ -1,4 +1,4 @@
-package uz.pdp.eticket_model.model.postgresql;
+package uz.pdp.eticket_model.model.sql;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -7,12 +7,12 @@ import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Transient;
 
-@MappedSuperclass
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@MappedSuperclass
 public class Ticket  extends BaseModel {
 
     @Transient
@@ -24,9 +24,11 @@ public class Ticket  extends BaseModel {
     @Column(name = "passenger_type")
     String passengerType;
 
-    String from;
+    @Column(name = "from_station")
+    String fromStation;
 
-    String to;
+    @Column(name = "to_station")
+    String toStation;
 
     @Column(name = "train_number")
     String trainNumber;

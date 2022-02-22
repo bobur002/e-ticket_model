@@ -1,10 +1,9 @@
-package uz.pdp.eticket_model.model.postgresql;
+package uz.pdp.eticket_model.model.sql;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.*;
 import java.util.Date;
