@@ -2,6 +2,7 @@ package uz.pdp.eticket_model.model.noSQL;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -13,8 +14,9 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Document(collation = "NoSql")
 public class Car extends BaseModelNoSql {
+    //    @Indexed(unique = true)
     String carType;
     double price;
     List<Seat> seats;
-
 }
+

@@ -18,7 +18,7 @@ public class Passage extends BaseModelNoSql {
       LocalDate  departureDate;
       String fromStation;
       String toStation;
-      @Indexed(unique = true)
+//      @Indexed(unique = true)
       String trainNumber;
       Train train;
       List<Station> stations;
