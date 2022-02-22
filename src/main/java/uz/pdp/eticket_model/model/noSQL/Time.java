@@ -15,4 +15,5 @@ public class Time {
     Date departureTime;
     Date arrivalTime;
     String state;
+
 }

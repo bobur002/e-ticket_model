@@ -13,12 +13,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Document(collation = "NoSql")
+@Document
 public class Passage extends BaseModelNoSql {
       LocalDate  departureDate;
       String fromStation;
       String toStation;
-//      @Indexed(unique = true)
+      @Indexed(unique = true)
       String trainNumber;
       Train train;
       List<Station> stations;

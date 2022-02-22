@@ -12,9 +12,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Document(collation = "NoSql")
+@Document
 public class Car extends BaseModelNoSql {
-    //    @Indexed(unique = true)
+        @Indexed(unique = true)
     String carType;
     double price;
     List<Seat> seats;

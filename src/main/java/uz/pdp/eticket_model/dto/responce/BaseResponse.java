@@ -6,6 +6,7 @@ public abstract class BaseResponse {
 
 
     public static ApiResponse ERROR_CAR_ALREADY_EXIST = new ApiResponse("invalid car", 404);
+    public static ApiResponse ERROR_TRAIN_ALREADY_EXIST = new ApiResponse("invalid train", 404);
 
 
 
