@@ -2,7 +2,8 @@ package uz.pdp.eticket_model.model.noSQL;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import uz.pdp.eticket_model.model.BaseModel;
+import org.springframework.data.mongodb.core.mapping.Document;
+import uz.pdp.eticket_model.model.postgresql.BaseModel;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -12,7 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Passage extends BaseModel {
+@Document(collation = "NoSql")
+public class Passage extends BaseModelNoSql {
       LocalDate  departureDate;
       String from;
       String to;

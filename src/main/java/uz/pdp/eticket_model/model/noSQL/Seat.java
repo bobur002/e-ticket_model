@@ -2,16 +2,17 @@ package uz.pdp.eticket_model.model.noSQL;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import uz.pdp.eticket_model.model.BaseModel;
+import org.springframework.data.mongodb.core.mapping.Document;
+import uz.pdp.eticket_model.model.postgresql.BaseModel;
 
 import java.util.List;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Seat extends BaseModel {
+@Document
+public class Seat  {
     String seatNumber;
     List<Time> timeState;
 }

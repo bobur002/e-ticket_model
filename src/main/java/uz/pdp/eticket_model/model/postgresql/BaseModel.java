@@ -1,9 +1,16 @@
-package uz.pdp.eticket_model.model;
+package uz.pdp.eticket_model.model.postgresql;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @MappedSuperclass
+@Document(collation = "")
+@AllArgsConstructor
+@NoArgsConstructor
 public abstract class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,10 +19,6 @@ public abstract class BaseModel {
     @Column(name = "create_date")
     Date createDate;
 
-    {
-        createDate = new Date();
-        long id = (long) (Math.random() * 10000 + 1);
-    }
 
     public long getId() {
         return id;

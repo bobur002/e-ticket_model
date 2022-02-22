@@ -2,7 +2,6 @@ package uz.pdp.eticket_model.model.postgresql;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import uz.pdp.eticket_model.model.BaseModel;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;

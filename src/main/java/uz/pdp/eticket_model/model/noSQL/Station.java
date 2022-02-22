@@ -2,16 +2,18 @@ package uz.pdp.eticket_model.model.noSQL;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import uz.pdp.eticket_model.model.BaseModel;
+import org.springframework.data.mongodb.core.mapping.Document;
+import uz.pdp.eticket_model.model.postgresql.BaseModel;
 
 import java.util.Date;
 
-@EqualsAndHashCode(callSuper = true)
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Station extends BaseModel {
+@Document
+public class Station {
     String name;
     Date arrivalTime;
     Date departureTime;

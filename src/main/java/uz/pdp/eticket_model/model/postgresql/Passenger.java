@@ -2,18 +2,18 @@ package uz.pdp.eticket_model.model.postgresql;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import uz.pdp.eticket_model.model.BaseModel;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Transient;
 
-@MappedSuperclass
+//@EqualsAndHashCode(callSuper = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@MappedSuperclass
 public class Passenger extends BaseModel {
     @Column(name = "first_name")
     String firstName;
