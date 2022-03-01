@@ -13,7 +13,7 @@ import javax.persistence.Transient;
 @AllArgsConstructor
 @NoArgsConstructor
 @MappedSuperclass
-public class Ticket  extends BaseModel {
+public class Ticket extends BaseModel {
 
     @Transient
     long passengerId;

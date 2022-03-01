@@ -14,7 +14,7 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Document
 public class Car extends BaseModelNoSql {
-        @Indexed(unique = true)
+    @Indexed(unique = true)
     String carType;
     double price;
     List<Seat> seats;

@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TrainReceiveDTO {
-        String trainName;
-        List<CarDTO> cars;
-        double priceByKM;
+    String trainName;
+    List<CarDTO> cars;
+    double priceByKM;
 }

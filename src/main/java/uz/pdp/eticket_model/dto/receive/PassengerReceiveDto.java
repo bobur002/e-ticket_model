@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.Transient;
 
 @Getter
@@ -16,18 +17,15 @@ public class PassengerReceiveDto {
 
     private String firstName;
 
-
     private String lastName;
 
     private String patronomyc;
-
 
     private String birthDate;
 
     private String gander;
 
     private String documentType;
-
 
     private String documentNumber;
 

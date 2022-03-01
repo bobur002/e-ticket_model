@@ -1,18 +1,24 @@
 package uz.pdp.eticket_model.dto.receive;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class TicketReceiveDto {
 
 
-   private long passengerId;
+    private long passengerId;
 
-
-   private long childPassengerId;
+    private long childPassengerId;
 
     private String passengerType;
 
-
     private String fromStation;
-
 
     private String toStation;
 
@@ -24,7 +30,6 @@ public class TicketReceiveDto {
 
 
     private String carType;
-
 
 
     private String carNumber;
@@ -39,4 +44,5 @@ public class TicketReceiveDto {
 
 
     private String departureDateTime;
+
 }
